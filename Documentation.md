@@ -127,7 +127,7 @@ local ColorPicker = Tab:CreateColorPicker({
         -- The variable (Value) is a Color3fromRGB value based on which color is selected
     end
 })
-````
+```
 ## Updating a Color Picker
 
 ```lua
