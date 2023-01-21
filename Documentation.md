@@ -116,7 +116,22 @@ Toggle:Set(false)
 ```
 
 ## Creating a Color Picker
-Coming Soon
+
+```lua
+local ColorPicker = Tab:CreateColorPicker({
+    Name = "Color Picker",
+    Color = Color3.fromRGB(255,255,255),
+    Flag = "ColorPicker1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        -- The function that takes place every time the color picker is moved/changed
+        -- The variable (Value) is a Color3fromRGB value based on which color is selected
+    end
+})
+````
+## Updating a Color Picker
+
+```lua
+ColorPicker:Set(Color3.fromRGB(255,255,255)
 
 
 ## Creating a Slider
@@ -207,6 +222,10 @@ local Dropdown = Tab:CreateDropdown({
 ```lua
 Dropdown:Set("Option 2") -- The new option value
 ```
+
+```lua
+Dropdown:Refresh
+
 
 ## Check the value of an existing element
 To check the current value of an existing element, using the variable, you can do `ElementName.CurrentValue`, if it's a keybind or dropdown, you will need to use `KeybindName.CurrentKeybind` or `DropdownName.CurrentOption`
