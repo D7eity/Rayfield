@@ -132,7 +132,7 @@ local ColorPicker = Tab:CreateColorPicker({
 
 ```lua
 ColorPicker:Set(Color3.fromRGB(255,255,255)
-
+```
 
 ## Creating a Slider
 ```lua
